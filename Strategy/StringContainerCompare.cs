@@ -4,18 +4,14 @@ using System.Text;
 
 namespace Strategy
 {
-    public class StringContainerCompare<T> : ICompareStrategy<T> where T : StringContainer
-    {
-        public bool IsLess(T left, T right)
-        {
-            return left.String.CompareTo(right.String) < 0;
-        }
-    }
-
-    public class StringContainer
+    public class StringContainer : ICompareStrategy<StringContainer>
     {
         public String String { get; set; }
 
+        public bool IsLess(StringContainer other)
+        {
+            return String.CompareTo(other.String) < 0;
+        }
     }
 
 }

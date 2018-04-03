@@ -6,6 +6,6 @@ namespace Strategy
 {
     interface ICompareStrategy<in T>
     {
-        bool IsLess(T left, T right);
+        bool IsLess(T other);
     }
 }

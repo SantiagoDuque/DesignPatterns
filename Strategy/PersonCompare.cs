@@ -4,17 +4,19 @@ using System.Text;
 
 namespace Strategy
 {
-    public class Person
+    public class Person: ICompareStrategy<Person>
     {
         public String Name { get; set; }
         public int Age { get; set; }
-    }
 
-    public class PersonCompare<T> : ICompareStrategy<T> where T:Person
-    {
-        public bool IsLess(T left, T right)
+        public bool IsLess(Person other)
         {
-            return left.Age < right.Age;
+            return Age < other.Age;
+        }
+
+        public override string ToString()
+        {
+            return $"Name:{Name} Age:{Age}";
         }
     }
 }
