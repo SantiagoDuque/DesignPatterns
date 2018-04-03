@@ -8,7 +8,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Abstract-Factory\AbstractFactory.csproj" />
     <ProjectReference Include="..\Composite\Composite.csproj" />
+    <ProjectReference Include="..\Decorator\Decorator.csproj" />
+    <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj" />
     <ProjectReference Include="..\Iterator\Iterator.csproj" />
+    <ProjectReference Include="..\Strategy\Strategy.csproj" />
   </ItemGroup>
 
 </Project>

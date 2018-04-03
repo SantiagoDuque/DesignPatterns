@@ -9,7 +9,8 @@ namespace DesignPatterns
             Console.WriteLine("Hello World!");
             //AbstractFactory.Client.Example();
             //Composite.Client.Example();
-            Iterator.Client.Example();
+            //Iterator.Client.Example();
+            Strategy.Client.Example();
             Console.ReadLine();
         }
     }
